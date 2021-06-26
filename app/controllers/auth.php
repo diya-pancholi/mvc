@@ -1,33 +1,34 @@
 <?php
 namespace Controller;
 
-class Auth {
-    public function post(){
+class Auth 
+{
+    public function post()
+    {
         $email= $_POST['email'];
         $pswd = $_POST['pswd'];
         $user= \Model\User::getuser($email, $pswd);
-        if($user){
-        $id= $user['id'];
-        if($id!=1){
-        $_SESSION['uid']=$id;
-        $_SESSION['role']="student";
-        $host  = $_SERVER['HTTP_HOST'];
-    header("Location: http://$host/home");
-    }
-    else{
-        $_SESSION['uid']=$id;
-        $_SESSION['role']="admin";
-
-        $host  = $_SERVER['HTTP_HOST'];
-    header("Location: http://$host/ahome");
-    }}
-    else 
+        if($user)
+        {
+            $id= $user['id'];
+            if($id!=1)
+            {
+                $_SESSION['uid']=$id;
+                $_SESSION['role']="student";
+                $host  = $_SERVER['HTTP_HOST'];
+                header("Location: http://$host/home");
+            }
+            else
+            {
+                $_SESSION['uid']=$id;
+                $_SESSION['role']="admin";
+                $host  = $_SERVER['HTTP_HOST'];
+                header("Location: http://$host/ahome");
+            }       
+        }
+        else 
         {
             echo "invalid credentials";
         }
-    
-
-}
-
-    
+    }
 }

@@ -11,12 +11,14 @@
     background-color: #008cba;
     align-self: center;
   }
+
   a {
     float: right;
     font-size: 2rem;
     color: orangered;
     z-index: 3;
   }
+
   .outer {
     display: flex;
     flex-direction: column;
@@ -34,6 +36,7 @@
     width: min-content;
     margin-top: 5%;
   }
+
   legend {
     background-color: black;
     text-align: center;
@@ -42,13 +45,16 @@
     text-shadow: white;
     font-family: fantasy;
   }
+
   .topnav {
     overflow: hidden;
     background-color: #000000c8;
   }
+
   h1 {
     color: orangered;
   }
+  
   label {
     font-size: 24px;
     color: white;

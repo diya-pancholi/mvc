@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-{% include("templates/ahead.twig") %}
-<title>{% block title %}{% endblock %}</title>
-</head>
-<body>
+  <head>
+  {% include("templates/ahead.twig") %}
+    <title>
+      {% block title %}{% endblock %}
+    </title>
+  </head>
+  <body>
     <div class="topnav">
         <a href="/addbooklink">Add Book </a>
         <a href="/ahome"> Approve Requests</a>
-        <a href="/logout">Log Out</a>
-        
-      </div>
-{% block body %}{% endblock %}
-</body>
+        <a href="/logout">Log Out</a>       
+    </div>
+    {% block body %}{% endblock %}
+  </body>
 </html>

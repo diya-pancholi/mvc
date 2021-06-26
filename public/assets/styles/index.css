@@ -2,6 +2,7 @@
 body {
     background-color: #202020;
   }
+
   h1 {
     color: #f8de7e;
     font-size: 15rem;
@@ -16,6 +17,7 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
   }
+
   .login {
     display: flex;
     flex-direction: row;
@@ -23,6 +25,7 @@ body {
     justify-content: space-around;
     flex-wrap: wrap;
   }
+
   .student {
     display: flex;
     flex-direction: column;
@@ -35,6 +38,7 @@ body {
     height: 15rem;
     width: 15rem;
   }
+
   .admin {
     display: flex;
     flex-direction: column;
@@ -42,6 +46,7 @@ body {
     font-size: 2rem;
     text-align: center;
   }
+  
   #slogan {
     font-size: 2rem;
     font-family: "Calligraffitti";
