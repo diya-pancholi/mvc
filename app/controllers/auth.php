@@ -10,11 +10,14 @@ class Auth {
         $id= $user['id'];
         if($id!=1){
         $_SESSION['uid']=$id;
+        $_SESSION['role']="student";
         $host  = $_SERVER['HTTP_HOST'];
     header("Location: http://$host/home");
     }
     else{
         $_SESSION['uid']=$id;
+        $_SESSION['role']="admin";
+
         $host  = $_SERVER['HTTP_HOST'];
     header("Location: http://$host/ahome");
     }}
