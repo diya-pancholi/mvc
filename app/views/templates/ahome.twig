@@ -1,0 +1,25 @@
+{% extends "templates/abase.twig" %}
+
+{% block title %}admin home{% endblock %}
+
+{% block body %}
+
+<div class="container">
+    {% for book in books %}
+    <div class="one">
+
+      <div class="box">
+        <p class="text">{{ book.name }}</p>
+      </div>
+      <div class="whitebox">
+        <p class="describe">{{ book.email }}<br /></p>
+      </div>
+      <div class="buttonalign">
+      <a href="/approve?id={{ book.id }} " class="button">Approve</a>
+      <a href="/disapprove?id={{ book.id }} " class="button2">Decline</a>
+    </div>
+    </div>
+    {% endfor %}
+  </div>
+
+{% endblock %}

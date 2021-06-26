@@ -1,0 +1,26 @@
+{% extends "templates/base.twig" %}
+
+{% block title %}<h1>PADH LI?</h1>{% endblock %}
+
+{% block body %}
+
+<div class="container">
+{% for book in books %}
+
+  <div class="one">
+    <div class="box">
+      <p class="text">{{ book.name }}</p>
+    </div>
+    <div class="whitebox">
+      <p class="describe">{{ book.genre }}<br /></p>
+    </div>
+  
+    <a href="/checkin?id={{ book.id }} " class="button">Check In</a>
+  </div>
+
+
+
+{% endfor %}
+</div>
+
+{% endblock %}
