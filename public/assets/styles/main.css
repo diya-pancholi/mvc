@@ -1,16 +1,16 @@
 body {
-    background-image: url("../images/cloud2.jpg");
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: #adefd1ff;
   }
 
   .box {
-    background: linear-gradient(35deg, #afe8ff 0%, #fc766a 50%, #002d66 100%);
+    background: #00203fff;
     border: 10px;
     border-color: aliceblue;
     color: aliceblue;
     border-style: solid;
     text-align: center;
+    font-style: italic;
+    font-family: fantasy;
   }
 
   .text {
@@ -40,8 +40,9 @@ body {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
   }
+
 
   .topnav input[type="text"] {
     float: right;
@@ -52,6 +53,9 @@ body {
     
   }
 
+  .one{
+    width: 35%;
+  }
   .topnav a{
     color:black;
     text-decoration: none;
@@ -92,6 +96,9 @@ body {
     background-color: black;
     color: white;
     text-align: center;
+    font-family: fantasy;
+    font-size: 20px;
+    
   }
 
   a {

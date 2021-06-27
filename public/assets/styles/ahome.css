@@ -1,18 +1,16 @@
 
 body {
-    background-image: url("../images/jesus.jpg");
-    background-size: cover;
-    background-attachment: fixed;
+   background-color: #adefd1ff;
   }
 
   .box {
-    background: linear-gradient(35deg, #afe8ff 0%, #fc766a 50%, #002d66 100%);
+    background: #00203fff;
     border: 10px;
-    border-color: black;
-    color: black;
+    border-color: white;
+    color: white;
     border-style: solid;
     text-align: center;
-   
+
   }
 
   .text {
@@ -96,6 +94,7 @@ body {
     background-color: black;
     color: azure;
     text-align: center;
+    font-size: 20px;
   }
 
   a {
