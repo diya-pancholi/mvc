@@ -2,8 +2,18 @@
 
 {% block title %}<h1>Intezaar Op</h1>{% endblock %}
 
+{% block nav %}
+<div class="topnav">
+  <a href="/home">Home</a>
+  <a href="/seecheckout">Your Books </a>
+  <a href="/viewrequest"> View requests </a>
+  <a href="/logout"> Log Out</a>
+</div>
+{% endblock %}
+
+
 {% block body %}
-<div class="container">
+
 {% for book in books %}
 
   <div class="one">
@@ -17,5 +27,5 @@
     <a class="button">Pending</a>
   </div>
 {% endfor %}
-</div>
+
 {% endblock %}

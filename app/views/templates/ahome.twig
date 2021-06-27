@@ -1,12 +1,17 @@
-{% extends "templates/abase.twig" %}
+{% extends "templates/base.twig" %}
 
 {% block title %}
 admin home
 {% endblock %}
-
+{% block nav %}
+<div class="topnav">
+  <a href="/addbooklink">Add Book </a>
+  <a href="/ahome"> Approve Requests</a>
+  <a href="/logout">Log Out</a>       
+</div>
+{% endblock %}
 {% block body %}
 
-<div class="container">
     {% for book in books %}
     <div class="one">
 
@@ -22,6 +27,5 @@ admin home
     </div>
     </div>
     {% endfor %}
-  </div>
-  
+
 {% endblock %}
